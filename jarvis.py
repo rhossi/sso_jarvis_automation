@@ -157,13 +157,8 @@ def generate_llm_summary_oci(table_data):
         Sample data (first 5 rows):
         {json.dumps(data_summary['sample_data'], indent=2)}
 
-        Please summarize:
-        1. What type of data this appears to be
-        2. Key patterns or insights you notice
-        3. Any notable trends or observations
-        4. A brief overview of the main findings
+        Analyze the data and summarize in narrative style the key findings and next steps.
 
-        Keep the summary concise and actionable.
     """
 
     # Service endpoint

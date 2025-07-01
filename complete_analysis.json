@@ -1,0 +1,66 @@
+{
+  "extraction_info": {
+    "timestamp": "2025-07-01T14:59:05.173690",
+    "search_term": "Cassidy Bartlet",
+    "total_rows": 4
+  },
+  "grok_summary": "Based on the provided table data, there are four open sales opportunities with a total potential value of $2.7 million. The opportunities are with customers Browsi, Tecsys Inc., Thomson Reuters Holdings Inc., and Cengage Learning Holdings II, Inc. All opportunities are currently in the \"Open\" status and have a potential new business value, with no renewal amounts listed.\n\nThe engagement status for three out of four opportunities is listed as \"Yellow,\" indicating a moderate level of engagement, while one opportunity with Tecsys Inc. is listed as \"Red,\" suggesting a higher level of risk or concern. The engagement status dates range from May 28, 2025, to June 26, 2025, indicating relatively recent updates on the opportunities.\n\nThe opportunities are assigned to various representatives, including Justin Greene, Anton Brotsos, and Trish Michaels, with support from strategic pursuit ECAs (Executive-level Customer Advocates) such as Cassidy Bartlett and Grant Frost, and ECAs like Nick Thomas, Samy Botros, and Jorge Roldan.\n\nNext steps could include:\n\n1. Reviewing the \"Red\" engagement status for the Tecsys Inc. opportunity to understand the underlying concerns and develop a plan to mitigate risks.\n2. Reaching out to the assigned representatives and ECAs to discuss the current status and progress of each opportunity.\n3. Analyzing the quarterly close dates to ensure timely follow-up and engagement with customers to meet the projected close dates (FY26-Q1 and FY26-Q2).\n4. Developing targeted strategies to move the opportunities forward, particularly for those with a \"Yellow\" engagement status, to increase the chances of successful closure.\n\nOverall, the data suggests a promising pipeline of sales opportunities, and proactive engagement with customers and internal stakeholders will be crucial to converting these opportunities into closed deals.",
+  "table_data": [
+    {
+      "Edit": "",
+      "Oppty ID": "A7VCM5",
+      "Customer Name": "Browsi",
+      "Oppty Status": "Open",
+      "Oppty Amount (New)": "$450,000",
+      "Oppty Amount (Renew)": "$0",
+      "Qtr Close": "FY26-Q2",
+      "Eng Status": "Yellow",
+      "Eng Status Date": "5/28/2025",
+      "Strategic Pursuit ECA": "Cassidy Bartlett",
+      "ECA": "Nick Thomas",
+      "Rep": "Justin Greene"
+    },
+    {
+      "Edit": "",
+      "Oppty ID": "A563Z5",
+      "Customer Name": "Tecsys Inc.",
+      "Oppty Status": "Open",
+      "Oppty Amount (New)": "$800,000",
+      "Oppty Amount (Renew)": "$0",
+      "Qtr Close": "FY26-Q1",
+      "Eng Status": "Red",
+      "Eng Status Date": "5/28/2025",
+      "Strategic Pursuit ECA": "Cassidy Bartlett",
+      "ECA": "",
+      "Rep": "Justin Greene"
+    },
+    {
+      "Edit": "",
+      "Oppty ID": "A5SJ7D",
+      "Customer Name": "Thomson Reuters Holdings Inc.",
+      "Oppty Status": "Open",
+      "Oppty Amount (New)": "$1,000,000",
+      "Oppty Amount (Renew)": "$0",
+      "Qtr Close": "FY26-Q2",
+      "Eng Status": "Yellow",
+      "Eng Status Date": "6/26/2025",
+      "Strategic Pursuit ECA": "Cassidy Bartlett",
+      "ECA": "Samy Botros",
+      "Rep": "Anton Brotsos"
+    },
+    {
+      "Edit": "",
+      "Oppty ID": "A7KRM6",
+      "Customer Name": "Cengage Learning Holdings II, Inc.",
+      "Oppty Status": "Open",
+      "Oppty Amount (New)": "$450,000",
+      "Oppty Amount (Renew)": "$0",
+      "Qtr Close": "FY26-Q2",
+      "Eng Status": "Yellow",
+      "Eng Status Date": "6/26/2025",
+      "Strategic Pursuit ECA": "Grant Frost",
+      "ECA": "Jorge Roldan",
+      "Rep": "Trish Michaels"
+    }
+  ]
+}
