@@ -182,63 +182,6 @@ def generate_llm_summary_oci(table_data):
     return response.content
 
 
-    url = os.getenv("OLLAMA_URL")
-    
-        # Prepare data for summarization
-    data_summary = {
-        "total_rows": len(table_data),
-        "columns": list(table_data[0].keys()) if table_data else [],
-        "sample_data": table_data[:5] if len(table_data) > 5 else table_data
-    }
-    
-    # Create prompt for Grok
-    prompt = f"""
-        Please provide a concise summary of this table data:
-
-        Total rows: {data_summary['total_rows']}
-        Columns: {', '.join(data_summary['columns'])}
-
-        Sample data (first 5 rows):
-        {json.dumps(data_summary['sample_data'], indent=2)}
-
-        Please summarize:
-        1. What type of data this appears to be
-        2. Key patterns or insights you notice
-        3. Any notable trends or observations
-        4. A brief overview of the main findings
-
-        Keep the summary concise and actionable.
-    """
-    
-    data = {
-        "model": "qwen3:8b",
-        "messages": [
-            {
-                "role": "system",
-                "content": "You are a data analyst assistant. Provide clear, concise summaries of tabular data."
-            },
-            {
-                "role": "user", 
-                "content": prompt
-            }
-        ],
-        "stream": True
-    }
-    
-    response = requests.post(url, json=data, stream=True)
-    
-    if response.status_code == 200:
-        for line in response.iter_lines():
-            if line:
-                chunk = json.loads(line.decode('utf-8'))
-                if not chunk.get('done'):
-                    content = chunk['message']['content']
-                    print(content, end='', flush=True)
-                else:
-                    print()  # New line when done
-    else:
-        print(f"Error: {response.status_code}")
-
 async def main():
     """Main function - handles both login and automation."""
     target_url = "https://itfcuqba1dqacqh-dtcinnovate.adb.us-ashburn-1.oraclecloudapps.com/ords/r/dtc_oci_innovation/customer-engagement-retrospective/engagement-analysis-report?session=1101789845951936"
