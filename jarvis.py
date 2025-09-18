@@ -184,7 +184,7 @@ def generate_llm_summary_oci(table_data):
 
 async def main():
     """Main function - handles both login and automation."""
-    target_url = "https://itfcuqba1dqacqh-dtcinnovate.adb.us-ashburn-1.oraclecloudapps.com/ords/r/dtc_oci_innovation/customer-engagement-retrospective/engagement-analysis-report?session=1101789845951936"
+    target_url = "<project alchemy url>"
     search_term = input("What is your search term?")  # Replace with your search term
     auth_file = "oracle_sso_session.json"
     
